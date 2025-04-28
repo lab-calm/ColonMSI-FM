@@ -1,8 +1,8 @@
-# Computational Pathology: Feature Extraction and Classification of MSI/MSS in Colorectal Cancer
+# Adapting Foundation Models in Computational Pathology: MSI/MSS Status Prediction in Colorectal Cancer
 
 ## Overview
 
-This repository contains the implementation of a comprehensive computational pathology pipeline for analyzing Whole Slide Images (WSI) of colorectal cancer tissues. The project focuses on the extraction of meaningful features from histopathological images and the subsequent classification of microsatellite instability (MSI) and microsatellite stability (MSS) status, which are important biomarkers in colorectal cancer.
+This repository contains the implementation of a comprehensive computational pathology pipeline for adapting foundation models to analyze Whole Slide Images (WSI) of colorectal cancer tissues. The project focuses on the extraction of visual embeddings (features) from histopathological image patches and the subsequent classification of microsatellite instability (MSI) and microsatellite stability (MSS) status, which are important biomarkers in colorectal cancer.
 
 The research compares the performance of several state-of-the-art computer vision and foundation models for histopathology feature extraction and evaluates different aggregation methods and classification algorithms.
 
@@ -34,7 +34,7 @@ Two primary methods were implemented to convert patch-level features to slide-le
   - Averaging features within each cluster
   - Concatenating the cluster-level features to form the slide-level representation
 
-### 4. Classification
+### 4. Adaptation by Classification
 Four different classifiers were trained and evaluated:
 - **ANN** (Artificial Neural Network)
 - **Linear** (Logistic Regression)
