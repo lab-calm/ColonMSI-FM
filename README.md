@@ -24,11 +24,11 @@ Four models were used for feature extraction:
 - **CONCH** ([MahmoodLab/CONCH](https://huggingface.co/MahmoodLab/CONCH)) - A computational pathology foundation model
 - **UNI** ([MahmoodLab/UNI](https://huggingface.co/MahmoodLab/UNI)) - A unified representation learning model for computational pathology
 - **Virchow2** ([paige-ai/Virchow2](https://huggingface.co/paige-ai/Virchow2)) - A pathology-specific vision model
-- **Baseline** (ResNet35) - A standard computer vision backbone
+- **Baseline** (ResNet34) - A standard computer vision backbone
 
 ### 3. Feature Aggregation
 Two primary methods were implemented to convert patch-level features to slide-level representations:
-- **Averaging Aggregation**: Simple averaging of all patch features from a slide
+- **Averaging Aggregation**: Simple Mean averaging of all patch features from a slide
 - **Clustering Aggregation**: 
   - Clustering patches into 2 or 3 clusters
   - Averaging features within each cluster
